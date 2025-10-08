@@ -29,5 +29,22 @@ class AditionView(View):
         sum = num1 + num2
 
         return HttpResponse(f"sum of two numbers is {sum}")
+    
+
+class OddEven(View):
+
+    def get(self,request):
+
+        number = int(input("enter a number"))
+
+        if number%2==0:
+
+            result = "even"
+
+        else:
+
+            result = "odd"
+
+        return HttpResponse(f"The number {number} is {result}")
 
     
