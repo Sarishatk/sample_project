@@ -17,5 +17,17 @@ class test_view(View):
         print("my first view")
 
         return HttpResponse("response succefully completed")
+    
+class AditionView(View):
+
+    def get(self,request):
+
+        num1 = int(input("enter first number: "))
+
+        num2 = int(input("enter second number: "))
+
+        sum = num1 + num2
+
+        return HttpResponse(f"sum of two numbers is {sum}")
 
     
