@@ -21,7 +21,7 @@ from sample_app.views import SampleView,test_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('sample/',SampleView.as_view()),
-    path('test/',test_view.as_view())
+    path('test/',test_view.as_view()
 
 
 ]
