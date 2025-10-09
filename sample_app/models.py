@@ -7,6 +7,11 @@ class Studentmodel(models.model):
 
     age = models.BigIntegerField(null = False)
 
-    qualification = models.CharField(10)
+    qualification = models.CharField(max_length=10)
 
-    
+# makemigration
+# migrate
+
+
+
+
