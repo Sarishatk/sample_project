@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Studentmodel(models.model):
+class Studentmodel(models.Model):
 
     name = models.CharField(max_length=30)
 
@@ -9,8 +9,10 @@ class Studentmodel(models.model):
 
     qualification = models.CharField(max_length=10)
 
-# makemigration
+# makemigration >>>>> 
 # migrate
+
+
 
 
 
