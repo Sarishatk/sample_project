@@ -1,3 +1,12 @@
 from django.db import models
 
-# Create your models here.
+
+class Studentmodel(models.model):
+
+    name = models.CharField(max_length=30)
+
+    age = models.BigIntegerField(null = False)
+
+    qualification = models.CharField(10)
+
+    
