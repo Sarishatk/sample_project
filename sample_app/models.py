@@ -13,6 +13,22 @@ class Studentmodel(models.Model):
 # migrate
 
 
+class Employeemodel(models.Model):
+
+    name = models.CharField(max_length=20)
+
+    age = models.IntegerField()
+
+    salary = models.IntegerField()
+
+    role = models.CharField(max_length=20)
+
+    email = models.CharField(max_length=20)
+
+    place = models.CharField(max_length=20)
+
+    experience = models.CharField(max_length=20)
+
 
 
 
