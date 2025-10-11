@@ -32,4 +32,22 @@ class Employeemodel(models.Model):
 
 
 
+class Product(models.Model):
 
+    name = models.CharField(max_length= 20)
+
+    categroy = models.CharField(max_length= 10)
+
+    brand = models.CharField(max_length= 20)
+
+    price = models.IntegerField()
+
+    stock = models.IntegerField()
+
+    rating = models.IntegerField()
+
+    city = models.CharField(max_length=20)
+
+    seller  = models.CharField(max_length=20)
+
+    
