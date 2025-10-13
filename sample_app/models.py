@@ -50,4 +50,25 @@ class Product(models.Model):
 
     seller  = models.CharField(max_length=20)
 
+
+class studentRecord(models.Model):
+
+    name =  models.CharField(max_length=20)
+
+    dept = models.CharField(max_length=20)
+
+    semester = models.CharField(max_length=20)
+
+    attendence = models.IntegerField()
+
+    internal_marks = models.IntegerField()
+
+    external_mark = models.IntegerField()
+
+    total_mark = models.IntegerField()
+
+    backlog = models.IntegerField()
+
+    age = models.IntegerField()
+
     
