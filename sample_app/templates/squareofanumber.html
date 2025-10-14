@@ -7,13 +7,15 @@
 </head>
 <body>
     <h1>Enter a Numner</h1>
-    <form action="" method="POST">
+    <form action="" method="post">
         {% csrf_token %}
         <label for="">Enter number: </label>
         <input type="text" name="number">
+        <button type="submit">Add</button>
+         <h1>{{squre}}</h1>
     </form>
-    <button type="submit">Add</button>
+    
 
-    <h1>{{squre}}</h1>
+   
 </body>
 </html>
