@@ -69,6 +69,16 @@ class AddTwonumbersView(View):
 
 class SqureofanumberView(View):
 
-    def get(slef,request):
+    def get(self,request):
 
         return render(request,"squareofanumber.html")
+    
+    def post(self,request):
+
+        print(request.POST)
+
+        num = request.POST.get("number")
+
+        result = int(num)**2
+
+        return render(request,"squareofanumber.html",{"squre":result})
