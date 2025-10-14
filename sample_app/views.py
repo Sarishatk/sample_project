@@ -48,3 +48,9 @@ class OddEven(View):
         return HttpResponse(f"The number {number} is {result}")
 
     
+class AddTwonumbersView(View):
+
+    def get(self, request):
+
+        return render(request,"addnumbers.html")
+
