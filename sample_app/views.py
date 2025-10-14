@@ -54,3 +54,21 @@ class AddTwonumbersView(View):
 
         return render(request,"addnumbers.html")
 
+    def post(self, request):
+
+        print(request.POST)
+
+        num1 = request.POST.get("num1")
+
+        num2  = request.POST.get("num2")
+
+        result = int(num1) + int(num2)
+
+        return render(request,"addnumbers.html",{"sum":result})
+    
+
+class SqureofanumberView(View):
+
+    def get(slef,request):
+
+        
