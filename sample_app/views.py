@@ -71,4 +71,4 @@ class SqureofanumberView(View):
 
     def get(slef,request):
 
-        
+        return render(request,"squareofanumber.html")

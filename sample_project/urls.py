@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from sample_app.views import SampleView,test_view,AditionView,OddEven,AddTwonumbersView
+from sample_app.views import SampleView,test_view,AditionView,OddEven,AddTwonumbersView,SqureofanumberView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,6 +24,7 @@ urlpatterns = [
     path('test/',test_view.as_view()),
     path('add/',AditionView.as_view()),
     path('oddevn/',OddEven.as_view()),
-    path('addnumbers/',AddTwonumbersView.as_view())
+    path('addnumbers/',AddTwonumbersView.as_view()),
+    path('squre/',SqureofanumberView.as_view()),
 
 ]
